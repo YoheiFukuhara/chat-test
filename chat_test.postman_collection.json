@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "d381c31c-e57b-49eb-8275-c4437a93bbad",
+		"name": "chat_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "local for post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"action_id\": \"5149f96e-b2c5-4e30-96ec-c587ae978d52\",\n    \"conversation\": {\n        \"id\": \"test-1530310812548\",\n        \"memory\": { \n        \t\"user\": \"Homer\"\n        },\n        \"language\": \"en\",\n        \"skill\": \"foo\",\n        \"skill_occurences\": 2\n    },\n    \"nlp\": {\n        \"act\": \"assert\",\n        \"language\": \"en\",\n        \"processing_language\": \"en\",\n        \"sentiment\": \"neutral\",\n        \"source\": \"This is a sample message.\",\n        \"status\": 200,\n        \"timestamp\": \"2018-06-29T22:00:50.591367+00:00\",\n        \"type\": null,\n        \"uuid\": \"c1bc4e40-ca14-4ce2-bc18-700433b001d9\",\n        \"version\": \"2.12.0\"\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": [
+				{
+					"name": "local for post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action_id\": \"5149f96e-b2c5-4e30-96ec-c587ae978d52\",\n    \"conversation\": {\n        \"id\": \"test-1530310812548\",\n        \"language\": \"en\",\n        \"memory\": { ... },\n        \"participant_data\": { ... },\n        \"skill\": \"foo\",\n        \"skill_occurences\": 2,\n        \"skill_stack\": [ ... ]\n    },\n    \"nlp\": {\n        \"act\": \"assert\",\n        \"entities\": { ... },\n        \"intents\": [ ... ],\n        \"language\": \"en\",\n        \"processing_language\": \"en\",\n        \"sentiment\": \"neutral\",\n        \"source\": \"This is a sample message.\",\n        \"status\": 200,\n        \"timestamp\": \"2018-06-29T22:00:50.591367+00:00\",\n        \"type\": null,\n        \"uuid\": \"c1bc4e40-ca14-4ce2-bc18-700433b001d9\",\n        \"version\": \"2.12.0\"\n    }\n}"
+						},
+						"url": {
+							"raw": "localhost:3000",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-fDWiQH/z39nhFwGU1o2D+cdWSdM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2019 04:07:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Hello World! for POST"
+				}
+			]
+		},
+		{
+			"name": "local for get method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	]
+}

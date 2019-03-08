@@ -1,0 +1,5 @@
+---
+applications:
+- name: chat-test
+  random-route: true
+  memory: 128M
